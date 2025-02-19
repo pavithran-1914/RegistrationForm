@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formvalidation.css" type="text/css">
+    <script src="formvalidation.js"></script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="success.html" name="regform" onsubmit="return validate()">
+        <div>
+            <label>Username </label>
+            <input id="one" type="text" name="name" value="" placeholder="Enter your username">
+            <span id="username-error" class="error-message"></span>
+        </div>
+        <div>
+            <label>Email </label>
+            <input id="two" type="text" name="email" value="" placeholder="Enter your email address">
+            <span id="email-error" class="error-message"></span>
+        </div>
+        <div>
+            <label>Password</label>
+            <input id="three" type="password" name="password" value="" placeholder="Enter your password">
+            <span id="pwd-error" class="error-message"></span>
+        </div>
+        <div>
+            <label>Address</label>
+            <textarea id="four" name="address" value="" placeholder="Enter your address"></textarea>
+            <span id="address-error" class="error-message"></span>
+        </div>
+        <div>
+            <label>Contact Number </label>
+            <input id="five" type="number" name="contact" value="" placeholder="Enter your contact number">
+            <span id="contact-error" class="error-message"></span>
+        </div>
+        <div>
+            <input type="submit" value="submit" name="submit">
+            <input type="reset" value="Reset" name="reset">
+        </div>
+    </form>
+</body>
+</html>
+    
+</body>
+</html>
